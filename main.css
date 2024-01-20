@@ -1,7 +1,9 @@
 .html{
     
 }
-
+.main-font{
+    font-size: 1.7rem;
+}
 .h_fbox{
     display: flex;
     padding: 0%;
@@ -34,4 +36,17 @@
 #logo{
     aspect-ratio: 4 4;
     height: 15vh;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+.upper{
+    height: 35vh;
+    padding: 16px;
+    position: relative;
+    font-size: 1.8rem;
+    
 }
