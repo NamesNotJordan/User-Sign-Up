@@ -8,7 +8,7 @@
 .main-font{
     font-size: 1.7rem;
 }
-.h_fbox{
+.h-flex{
     display: flex;
     padding: 0%;
     margin: 0%;
@@ -66,5 +66,16 @@
     
 }
 .mid {
-    
+    padding: 40px 60px 25px;
+    z-index: 1;
+
+    background-image: url(burned\ Paper.png);
+    background-size: 100% 100%;
+}
+.input-group:nth-child(2){
+    margin-left: 100px;
+}
+
+.form {
+    margin-top: 30px;
 }

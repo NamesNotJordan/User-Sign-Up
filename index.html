@@ -3,16 +3,16 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Join the Strawhats</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
     <main>
-        <div class="wholeSide h_fbox">
+        <div class="wholeSide h-flex">
             <div class="leftSide">
-                <div id="title" class="h_fbox">
+                <div id="title" class="h-flex">
                     <img src="jolly_roger.png" alt="" id="logo">
                     <h1>Join<br>My Crew</h1>
                 </div>
@@ -27,7 +27,38 @@
                 </div>
                 <div class="mid">
                     <span class="main-font">Tell us about yourself</span>
-                    
+                    <form action="" class="user-details">
+                     <div class="row h-flex">
+                        <div class="input-group">
+                            <label for="first_name">First Name</label>
+                            <input id="first_name" type="text">
+                        </div>
+                        <div class="input-group">
+                            <label for="last_name">Last Name</label>
+                            <input id="last_name" type="text">
+                        </div>
+                     </div>
+                     <div class="row h-flex">
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="text">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Snail Number</label>
+                            <input id="phone" type="text">
+                        </div>
+                     </div>
+                     <div class="row h-flex">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input id="Password" type="text">
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input id="confirm_password" type="text">
+                        </div>
+                     </div>
+                    </form>
                 </div>
                 <div class="lower v-flex">
                     <button type="submit">Join Crew</button>
