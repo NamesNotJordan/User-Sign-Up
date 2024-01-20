@@ -1,3 +1,7 @@
+@font-face {
+    font-family: op-font;
+    src: url(one\ piece\ font.ttf);
+}
 .html{
     
 }
@@ -11,6 +15,10 @@
     border: 0;
     height: 100%;
     width: 100%;
+}
+.v-flex{
+    display: flex;
+    flex-direction: column;
 }
 .leftSide{
     height: 100vh;
@@ -28,6 +36,10 @@
     align-items: center;
     top: 200px;
     padding: 20px 0px;
+
+    font-family: op-font;
+    font-size: 1.5rem;
+    text-align: center;
 }
 #title > h1{
     color: antiquewhite;
@@ -39,14 +51,20 @@
 }
 
 .rightSide{
-    display: flex;
-    flex-direction: column;
     width: 60vw;
+    background-image: url(https://images.assetsdelivery.com/compings_v2/pictulandra/pictulandra1808/pictulandra180800022.jpg);
+    background-size: 70vh;
 }
-.upper{
+.upper, .mid, .lower{
     height: 35vh;
     padding: 16px;
+}
+.upper{
     position: relative;
     font-size: 1.8rem;
+    text-align: center;
+    
+}
+.mid {
     
 }
