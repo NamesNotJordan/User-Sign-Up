@@ -43,7 +43,7 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    top: 200px;
+    top: 20px;
     padding: 10px 0px;
 
     text-align: center;
@@ -64,7 +64,6 @@ body {
     width: 60vw;
     background-image: url(https://images.assetsdelivery.com/compings_v2/pictulandra/pictulandra1808/pictulandra180800022.jpg);
     background-size: 80vh;
-
     border: 2px solid;
     border-color: rgb(63, 45, 33);
 }
@@ -91,8 +90,12 @@ body {
     margin-left: 30px;
     top: 20px;
     line-height: 1.05;
+
+    
 }
 
+
+    
 .mid {
     padding: 25px 60px 25px 90px;
     height: 32vh;
@@ -154,8 +157,13 @@ input:focus{
 }
 .lower > span {
     margin-top: 15px;
+    font-family: carlosea;
+    font-size: 1.15rem;
     white-space: nowrap;
     overflow: hidden;
+}
+span > a {
+    color: ;
 }
 button {
     width: 20vw;
