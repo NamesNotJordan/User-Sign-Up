@@ -14,11 +14,6 @@
 }
 .h-flex{
     display: flex;
-    padding: 0%;
-    margin: 0%;
-    border: 0;
-    height: 100%;
-    width: 100%;
 }
 .v-flex{
     display: flex;
@@ -27,12 +22,13 @@
 .leftSide{
     height: 100vh;
     width: 45vw;
+    position: relative;
     background-image: url(pictures/strawhats.jpg); 
     background-size: cover;
 }
 #title{
     height: fit-content;
-    background-color: rgba(0, 2, 128, 0.5);
+    background-color: rgba(128, 0, 0, 0.5);
     
     position: absolute;
     width: 100%;
@@ -44,7 +40,7 @@
     text-align: center;
 }
 #title > span{
-    color: antiquewhite;
+    color: rgb(246, 250, 215);
     font-family: op-manga-font;
     font-size: 4rem;
 }
@@ -61,27 +57,33 @@
 
     border: 2px solid;
     border-color: rgb(63, 45, 33);
-    box-shadow: 4, 4, black;
 }
-.upper, .mid{
-    height: 35vh;
-    padding: 16px;
-}
+
 .upper{
+    height: 33vh;
+    padding: 16px;
     position: relative;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     font-family: carlosea;
+
+
 }
 .mid {
-    padding: 40px 60px 25px;
+    padding: 60px 90px 25px;
+    height: 35vh;
     z-index: 1;
 
     background-image: url(pictures/burned\ Paper.png);
     background-size: 60vw 100%;
 }
 .mid >span{
-    font-family: op-font;
+    font-family: carlosea;
+    font-size: 2.3rem;
+}
+.input-group {
+    margin-bottom: 25px;
+    
 }
 .input-group:nth-child(2){
     margin-left: 100px;
@@ -89,4 +91,46 @@
 
 form {
     margin-top: 30px;
+}
+
+label{
+    font-size: 1.07rem;
+    margin-bottom: 3px;
+    letter-spacing: 0.07rem;
+    
+}
+
+input {
+    height: 25px;
+    
+    border-radius: 3px;
+    border: 1px rgb(51, 34, 22) solid;
+    
+}
+
+.lower{
+    padding: 35px 50px;
+}
+.lower > span {
+    margin-top: 15px;
+}
+button {
+    width: 20vw;
+    height: 6vh;
+
+    font-family: op-manga-font;
+    font-size: 2.5rem;
+    color: rgb(246, 250, 215);
+
+    background-color: rgb(151,37,37);
+
+    border-radius: 6px;
+    border: 3px rgba(112, 79, 18, 0.5) solid;
+
+    
+}
+.foot-text {
+    position: absolute;
+    bottom: 5px;
+    left: 25px;
 }
