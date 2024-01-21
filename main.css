@@ -1,6 +1,10 @@
 @font-face {
-    font-family: op-font;
-    src: url(one\ piece\ font.ttf);
+    font-family: op-manga-font;
+    src: url(Fonts/one\ piece\ font.ttf);
+}
+@font-face {
+    font-family: carlosea;
+    src: url(Fonts/CarloseademoRegular-K7z7D.otf);
 }
 .html{
     
@@ -23,7 +27,7 @@
 .leftSide{
     height: 100vh;
     width: 45vw;
-    background-image: url(strawhats.jpg); 
+    background-image: url(pictures/strawhats.jpg); 
     background-size: cover;
 }
 #title{
@@ -35,27 +39,31 @@
     justify-content: center;
     align-items: center;
     top: 200px;
-    padding: 20px 0px;
+    padding: 10px 0px;
 
-    font-family: op-font;
-    font-size: 1.5rem;
     text-align: center;
 }
-#title > h1{
+#title > span{
     color: antiquewhite;
+    font-family: op-manga-font;
+    font-size: 4rem;
 }
 
 #logo{
-    aspect-ratio: 4 4;
-    height: 15vh;
+    aspect-ratio: 4/4;
+    height: 20vh;
 }
 
 .rightSide{
     width: 60vw;
     background-image: url(https://images.assetsdelivery.com/compings_v2/pictulandra/pictulandra1808/pictulandra180800022.jpg);
     background-size: 70vh;
+
+    border: 2px solid;
+    border-color: rgb(63, 45, 33);
+    box-shadow: 4, 4, black;
 }
-.upper, .mid, .lower{
+.upper, .mid{
     height: 35vh;
     padding: 16px;
 }
@@ -63,19 +71,22 @@
     position: relative;
     font-size: 1.8rem;
     text-align: center;
-    
+    font-family: carlosea;
 }
 .mid {
     padding: 40px 60px 25px;
     z-index: 1;
 
-    background-image: url(burned\ Paper.png);
-    background-size: 100% 100%;
+    background-image: url(pictures/burned\ Paper.png);
+    background-size: 60vw 100%;
+}
+.mid >span{
+    font-family: op-font;
 }
 .input-group:nth-child(2){
     margin-left: 100px;
 }
 
-.form {
+form {
     margin-top: 30px;
 }
