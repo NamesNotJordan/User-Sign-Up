@@ -9,6 +9,9 @@
 html {
     font: 1em carlosea;    
 }
+* {
+    border: px solid
+}
 body { 
     margin-top: 0px;
     margin-right: 0px;
@@ -44,6 +47,7 @@ body {
     padding: 10px 0px;
 
     text-align: center;
+    overflow: hidden;
 }
 #title > span{
     color: rgb(246, 250, 215);
@@ -59,18 +63,17 @@ body {
 .rightSide{
     width: 60vw;
     background-image: url(https://images.assetsdelivery.com/compings_v2/pictulandra/pictulandra1808/pictulandra180800022.jpg);
-    background-size: 70vh;
+    background-size: 80vh;
 
     border: 2px solid;
     border-color: rgb(63, 45, 33);
 }
 
 .upper{
-    height: 30vh;
-    padding: 20px 20px 10px;
+    height: 35vh;
+    padding: 16px;
     position: relative;
-    font-size: 2.15rem;
-    text-align: center;
+    font-size: 2rem;
     font-family: carlosea;
 
 
@@ -78,40 +81,57 @@ body {
 .upper>em {
     font-size: 3rem;
 }
+
+.upper-content{
+    position: absolute;
+    width: 70%;
+    min-width: 400px;
+    overflow: hidden;
+    
+    margin-left: 30px;
+    top: 20px;
+    line-height: 1.05;
+}
+
 .mid {
-    padding: 60px 90px 25px;
-    height: 35vh;
+    padding: 25px 60px ;
+    height: 32vh;
     z-index: 1;
 
     background-image: url(pictures/burned\ Paper.png);
-    background-size: 60vw 100%;
+    background-size: 65vw 100%;
 }
 .mid >span{
     font-family: carlosea;
     font-size: 2.3rem;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .input-group {
     margin-bottom: 25px;
-    
+    display: flex;
+    flex-direction: column;
 }
 .input-group:nth-child(2){
     margin-left: 100px;
 }
 
 form {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 label{
-    font-size: 1.09rem;
+    font-size: 1.2rem;
     margin-bottom: 3px;
     letter-spacing: 0.07rem;
     font-family: carlosea;
 }
 
 input {
-    height: 25px;
-    
+    height: 30px;
+    width: 250px;
+    padding-left: 5px;
+
     border-radius: 3px;
     border: 1px rgb(51, 34, 22) solid;
     
@@ -125,18 +145,24 @@ input:focus{
 }
 
 .lower{
-    padding: 35px 50px;
+    padding: 30px 60px;
+    
 }
 .lower > span {
     margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 button {
     width: 20vw;
     height: 6vh;
+    min-width: 180px;
 
     font-family: op-manga-font;
     font-size: 2.5rem;
     color: rgb(246, 250, 215);
+    white-space: nowrap;
+    overflow: hidden;
 
     background-color: rgb(151,37,37);
 
