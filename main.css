@@ -6,9 +6,15 @@
     font-family: carlosea;
     src: url(Fonts/CarloseademoRegular-K7z7D.otf);
 }
-.html{
-    
+html {
+    font: 1em carlosea;    
 }
+body { 
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+  }
 .main-font{
     font-size: 1.7rem;
 }
@@ -60,14 +66,17 @@
 }
 
 .upper{
-    height: 33vh;
-    padding: 16px;
+    height: 30vh;
+    padding: 20px 20px 10px;
     position: relative;
-    font-size: 2rem;
+    font-size: 2.15rem;
     text-align: center;
     font-family: carlosea;
 
 
+}
+.upper>em {
+    font-size: 3rem;
 }
 .mid {
     padding: 60px 90px 25px;
@@ -94,10 +103,10 @@ form {
 }
 
 label{
-    font-size: 1.07rem;
+    font-size: 1.09rem;
     margin-bottom: 3px;
     letter-spacing: 0.07rem;
-    
+    font-family: carlosea;
 }
 
 input {
@@ -106,6 +115,13 @@ input {
     border-radius: 3px;
     border: 1px rgb(51, 34, 22) solid;
     
+    background-color: rgb(255, 249, 241);
+}
+
+input:focus{
+    border: 1px rgb(151,37,37) solid;
+    outline: none;
+    box-shadow: 2.5px 2px 6px rgb(163, 129, 90);
 }
 
 .lower{
@@ -128,6 +144,10 @@ button {
     border: 3px rgba(112, 79, 18, 0.5) solid;
 
     
+}
+button:hover {
+    cursor: pointer;
+    filter: brightness(93%);
 }
 .foot-text {
     position: absolute;
