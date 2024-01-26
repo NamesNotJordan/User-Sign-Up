@@ -63,16 +63,16 @@ body {
 .rightSide{
     width: 60vw;
     background-image: url(https://images.assetsdelivery.com/compings_v2/pictulandra/pictulandra1808/pictulandra180800022.jpg);
-    background-size: 80vh;
+    background-size: 100% 100%;
     border: 2px solid;
     border-color: rgb(63, 45, 33);
 }
 
 .upper{
-    height: 35vh;
+    height: 39vh;
     padding: 16px;
     position: relative;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: carlosea;
 
 
@@ -83,7 +83,7 @@ body {
 
 .upper-content{
     position: absolute;
-    width: 70%;
+    width: 80%;
     min-width: 400px;
     overflow: hidden;
     
@@ -91,14 +91,18 @@ body {
     top: 20px;
     line-height: 1.05;
 
-    
+    background-color: antiquewhite;
+    border: 2px brown solid;
+    border-radius: 10px;
+
+    padding: 15px;
 }
 
 
     
 .mid {
-    padding: 25px 60px 25px 90px;
-    height: 32vh;
+    padding: 40px 60px 25px 90px;
+    height: 50vh;
     min-height: 330px;
     z-index: 1;
 
@@ -107,15 +111,16 @@ body {
 }
 .mid >span{
     font-family: carlosea;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     white-space: nowrap;
     overflow: hidden;
+    margin-left: 50px
 }
 .row {
-    
+    justify-content: space-evenly;
 }
 .input-group {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -146,28 +151,22 @@ input {
 }
 
 input:focus{
-    border: 1px rgb(151,37,37) solid;
     outline: none;
     box-shadow: 2.5px 2px 6px rgb(163, 129, 90);
 }
 
-.lower{
-    padding: 30px 60px;
-    
+input:invalid:focus {
+    border: 3px rgb(151,37,37) solid;
 }
-.lower > span {
-    margin-top: 15px;
-    font-family: carlosea;
-    font-size: 1.15rem;
-    white-space: nowrap;
-    overflow: hidden;
+input:valid:focus {
+    border: 2px rgb(38, 151, 38) solid;
 }
 span > a {
     color: ;
 }
 button {
     width: 20vw;
-    height: 6vh;
+    height: 7vh;
     min-width: 180px;
 
     font-family: op-manga-font;
@@ -179,8 +178,9 @@ button {
     background-color: rgb(151,37,37);
 
     border-radius: 6px;
-    border: 3px rgba(112, 79, 18, 0.5) solid;
+    border: 4px rgba(112, 79, 18, 0.5) solid;
 
+    margin: 20px 0px 0px 0px
     
 }
 button:hover {
