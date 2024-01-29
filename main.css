@@ -162,12 +162,12 @@ input:valid:focus {
     border: 2px rgb(38, 151, 38) solid;
 }
 .lower {
-    height: 30px;
-        
+    min-height: 30px;
+    padding: 20px 60px;
 }
 
 span > a {
-    color: ;
+    
 }
 button {
     width: 20vw;
@@ -193,7 +193,8 @@ button:hover {
     filter: brightness(93%);
 }
 .foot-text {
-    position: absolute;
     bottom: 5px;
-    left: 25px;
+    right: 25%;
+    font-size: 0.8rem;
+    
 }
