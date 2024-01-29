@@ -30,7 +30,7 @@
                 </div>
                 <div class="mid">
                     <span class="main-font">Tell us about yourself</span>
-                    <form action="" class="user-details">
+                    <form action="" id="user-details">
                      <div class="row h-flex">
                         <div class="input-group">
                             <label for="first_name">First Name</label>
@@ -67,14 +67,17 @@
                                     required>
                         </div>
                      </div>
-                     <span id="wrong-password-msg"></span>
-                     <button type="submit">Join Crew</button>
+                     
+                    </form>
+                    
+                </div>
+                <div class="lower">
+                    <span id="wrong-password-msg"></span>
+                    <button type="submit" form="user-details">Join Crew</button>
                     <span class="login">Already a Strawhat? 
                         <a href="">Log in</a>
                     </span>
-                    </form>
                 </div>
-                
             </div>
         </div>
     </main>

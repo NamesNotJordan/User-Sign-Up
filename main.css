@@ -16,7 +16,7 @@ body {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-left: 0px
+    margin-left: 0px;
   }
 .main-font{
     font-size: 1.7rem;
@@ -29,8 +29,8 @@ body {
     flex-direction: column;
 }
 .leftSide{
-    height: 100vh;
     width: 45vw;
+    min-height: 100vh;
     position: relative;
     background-image: url(pictures/strawhats.jpg); 
     background-size: cover;
@@ -62,6 +62,7 @@ body {
 
 .rightSide{
     width: 60vw;
+
     background-image: url(https://images.assetsdelivery.com/compings_v2/pictulandra/pictulandra1808/pictulandra180800022.jpg);
     background-size: 100% 100%;
     border: 2px solid;
@@ -69,8 +70,8 @@ body {
 }
 
 .upper{
-    height: 39vh;
-    padding: 16px;
+    height: 30vh;
+    padding: 5px;
     position: relative;
     font-size: 1.7rem;
     font-family: carlosea;
@@ -102,12 +103,11 @@ body {
     
 .mid {
     padding: 40px 60px 25px 90px;
-    height: 50vh;
     min-height: 330px;
     z-index: 1;
 
     background-image: url(pictures/burned\ Paper.png);
-    background-size: 65vw 100%;
+    background-size: 100% 100%;
 }
 .mid >span{
     font-family: carlosea;
@@ -118,15 +118,15 @@ body {
 }
 .row {
     justify-content: space-evenly;
+    display:flex;
+    flex-wrap: wrap;
 }
 .input-group {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
 }
-.input-group:nth-child(2){
-    margin-left: 100px;
-}
+
 
 form {
     margin-top: 15px;
@@ -161,6 +161,11 @@ input:invalid:focus {
 input:valid:focus {
     border: 2px rgb(38, 151, 38) solid;
 }
+.lower {
+    height: 30px;
+        
+}
+
 span > a {
     color: ;
 }
